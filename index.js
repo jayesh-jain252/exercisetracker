@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
-const moment = require("moment");
 const User = require("./models/user");
 const Log = require("./models/log");
 const Exercise = require("./models/exercise");
