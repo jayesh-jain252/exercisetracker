@@ -8,7 +8,7 @@ const Log = require("./models/log");
 const Exercise = require("./models/exercise");
 
 // Config
-mongoose.connect(process.env["MONGO_URI"], () => {
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true }, () => {
   console.log("Connected to mongoDB");
 });
 
