@@ -109,6 +109,8 @@ app.post("/api/users/:_id/exercises", (req, res) => {
   });
 });
 
+// Reference : https://replit.com/@mazorSharp/Exercise-Tracker?v=1#server.js
+
 app.get("/api/users/:_id/logs", (req, res) => {
   const { from, to, limit } = req.query;
   let idJson = { id: req.params._id };
